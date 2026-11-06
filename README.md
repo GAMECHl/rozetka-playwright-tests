@@ -1,6 +1,6 @@
 # Rozetka smoke tests (C# / .NET / Playwright / NUnit)
 
-Three simple UI smoke tests for https://rozetka.com.ua/ua/:
+Three UI smoke tests for https://rozetka.com.ua/ua/:
 
 1. Home page loads and shows the search field
 2. Category page (mobile phones) opens and shows products
