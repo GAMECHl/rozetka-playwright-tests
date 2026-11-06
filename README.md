@@ -18,14 +18,15 @@ Three UI smoke tests for https://rozetka.com.ua/ua/:
 dotnet restore
 dotnet build
 
-# install browsers once (replace net8.0 with your target framework folder)
+# install Playwright browsers once
+# (use "powershell" instead of "pwsh" if PowerShell 7 is not installed)
 pwsh bin/Debug/net8.0/playwright.ps1 install
 
-# run in a visible real Chrome (recommended, see notes)
-dotnet test --settings playwright.runsettings
-
-# or run with the default headless Chromium
+# run tests (headless Chromium)
 dotnet test
+
+# optional: run in a visible real Chrome (requires Google Chrome installed)
+dotnet test --settings playwright.runsettings
 ```
 
 ## Notes
